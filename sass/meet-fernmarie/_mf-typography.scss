@@ -1,0 +1,141 @@
+//hero-box-signature-img
+.eh-signature-mf{
+  width: 50%;
+  margin-bottom: 1em;
+}
+//chapter 1 txt
+.chap-1-title{
+  @include typo(2em, $darko, 500);
+  margin-top: .5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(4em, $darko, 500);
+  }
+  @include responsive(tab-land){
+    margin-bottom: 1em;
+  }
+  @include responsive(phone){
+    @include typo(1.7em, $darko, 500);
+    margin-bottom: 1em;
+  }
+  //responsive:end
+}
+.chap-one-txt{
+  @include typo(1em, $darko, 500);
+  padding: .3em;
+  background: $primary-color;
+  text-align: center;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $darko, 500);
+  }
+  //responsive:end
+}
+.chap-one-content{
+  @include typo(1em, $txt, 300);
+  margin-bottom: 1em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(1.9em, $txt, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $txt, 300);
+  }
+  //responsive:end
+}
+.ab-box-1-img{
+  position: absolute;
+  z-index: -1;
+  width: 12%;
+  left: -2em;
+  margin-top: -2em;
+}
+.ab-box-2-img{
+  position: absolute;
+  z-index: -1;
+  width: 12%;
+  left: 0em;
+  // margin-top: -2em;
+}
+.ab-box-3-img{
+  position: absolute;
+  z-index: -1;
+  width: 12%;
+  right: -2em;
+  -webkit-transform: scaleX(-1) !important;
+  transform: scaleX(-1) !important;
+  margin-top: -13em;
+}
+.ab-box-4-img{
+  position: absolute;
+  z-index: 10;
+  width: 12%;
+  left: 0em;
+  // margin-top: -2em;
+}
+
+//more
+.meet-fern-title{
+  @include typo(2em, $darko, 900);
+}
+.mf-t-img{
+  width: 60%;
+}
+
+.mj-title{
+  @include typo(2em, $darko, 500);
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(4em, $darko, 500);
+  }
+  @include responsive(phone){
+    @include typo(1.7em, $darko, 500);
+  }
+  //responsive:end
+}
+
+.mf-title-color{
+  font-family: $style-font;
+  color: $primary-color;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.bk-box-title{
+  font-family: sloop-script-pro, sans-serif;
+  color: $txt;
+  font-weight: 700;
+  font-size: 2.5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    font-size: 2em;
+  }
+  @include responsive(tab-land){
+    font-size: 1.8em;
+  }
+  //responsive:end
+}
+
+.mb-hero-txt{
+  // font-family: $style-font;
+  display: block;
+}
+
+.ta-right-mf-2{
+  text-align: left;
+}
+
+.chap-one-content-mf2{
+  @include typo(1em, $txt, 300);
+  margin-bottom: 1em;
+  clear: both;
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $txt, 300);
+  }
+}
+.chap-one-txt-mf2{
+  img{
+    width: 25%;
+  }
+}

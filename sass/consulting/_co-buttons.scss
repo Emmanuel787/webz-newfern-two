@@ -1,0 +1,59 @@
+.hs-btn-co{
+  @include heroBtn(#c9a56e, none, 1em 1.5em);
+  @include typo(1em, $white, 300);
+  transition: all .2s ease-in-out;
+  border: 1px solid #c9a56e;
+  margin-left: -24.5em;
+  &:hover{
+    background: none;
+    border: 1px solid $white;
+    color: $white;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $darko, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $darko, 300);
+  }
+  //responsive:end
+}
+
+.inst-joe-btn{
+  @include heroBtn($primary-color, none, 1em 1.5em);
+  @include typo(1em, $white, 300);
+  transition: all .2s ease-in-out;
+  border: 1px solid $primary-color;
+  &:hover{
+    background: none;
+    border: 1px solid $darko;
+    color: $darko;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $darko, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $darko, 300);
+  }
+  //responsive:end
+}
+.inst-fern-btn{
+  @include heroBtn($primary-color, none, 1em 1.5em);
+  @include typo(1em, $white, 300);
+  transition: all .2s ease-in-out;
+  border: 1px solid $primary-color;
+  &:hover{
+    background: none;
+    border: 1px solid $darko;
+    color: $darko;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $darko, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $darko, 300);
+  }
+  //responsive:end
+}

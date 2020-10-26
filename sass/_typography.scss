@@ -1,0 +1,327 @@
+@import "responsive/manifest";
+@import "typography/manifest";
+@import "config";
+//hero-section
+
+.eh-quote{
+  @include typo(1em, $txt, 400);
+  position: relative;
+  margin-bottom: 1.5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 400);
+  }
+  @include responsive(tab-land){
+    @include typo(.9em, $txt, 400);
+  }
+  @include responsive(tab-port){
+    margin-bottom: 2em;
+  }
+  //responsive:end
+}
+// .eh-quote::before{
+//   content: '"';
+//   position: absolute;
+//   @include typo(4em, $txt, 400);
+//   top: 0; left: 0;
+//   margin-top: -.6em;
+//   margin-left: -.2em;
+// }
+// .eh-quote::after{
+//   content: '"';
+//   position: absolute;
+//   @include typo(4em, $txt, 400);
+//   bottom: -.8em; right: 0;
+//   margin-left: -1em !important;
+// }
+
+//about-Fernmarie
+.af-ia-right-title{
+  @include typo(3em, $darko, 400);
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(4em, $darko, 400);
+  }
+  @include responsive(tab-land){
+    @include typo(2em, $darko, 400);
+    margin-bottom: 1em;
+  }
+  //responsive:end
+}
+.af-ia-right-title::after{
+  content: "Fernmarie";
+  @include typo(2em, $primary-color, null);
+  font-family: $style-font;
+  margin-left: -.1em;
+  position: relative;
+  bottom: -.3em;
+  margin-bottom: .4em;
+}
+
+.af-ia-right-story{
+  @include typo(1em, $txt, 300);
+  margin-bottom: .5em;
+  // font-family: $segoe-reg;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 300);
+  }
+  @include responsive(tab-land){
+    @include typo(.9em, $txt, 300);
+  }
+  //responsive:end
+}
+//meet Fernnmarie
+.mfcb-title{
+  @include typo(1.4em, $darko, 500);
+  margin-bottom: 1em;
+  line-height: 1.3em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(3em, $darko, 500);
+  }
+  @include responsive(tab-land){
+    @include typo(1.4em, $darko, null);
+  }
+  @include responsive(tab-port){
+    @include typo(1.2em, $darko, null);
+  }
+  @include responsive(phone){
+    @include typo(1.3em, $darko, 400);
+    line-height: 1.3em;
+    margin-bottom: 1em;
+  }
+  //responsive:end
+}
+.mfcb-mv-right{
+  @include typo(2em, #d5b6ae, 800);
+  font-family: allura, sans-serif;
+  text-align: right;
+  margin-bottom: 1em;
+}
+.mscb-txt{
+  @include typo(1em, $txt, 300);
+  margin-bottom: 1em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 300);
+  }
+  @include responsive(tab-land){
+    @include typo(.9em, $txt, 300);
+  }
+  //responsive:end
+}
+//upcoming events
+.ue-title{
+  @include typo(3em, $darko, 400);
+  text-align: center;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(4em, $darko, 400);
+  }
+  @include responsive(tab-land){
+    @include typo(2em, $darko, 400);
+  }
+  @include responsive(phone){
+    padding:1em 0;
+  }
+  //responsive:end
+}
+.ue-title::after{
+  content: "Events";
+  @include typo(2em, $primary-color, null);
+  font-family: $style-font;
+  margin-left: -.1em;
+  position: relative;
+  bottom: -.3em;
+  margin-bottom: .4em;
+}
+
+.wcf-title{
+  @include typo(1.5em, $darko, 700);
+  margin-bottom: .5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $darko, 700);
+  }
+  @include responsive(tab-land){
+    @include typo(1.2em, $darko, 700);
+    margin-bottom: .5em;
+  }
+  @include responsive(tab-port){
+    margin-bottom: 1em;
+    font-weight: 500;
+  }
+  //responsive:end
+}
+.wcf-link{
+  @include typo(1em, #ad84b0, 700);
+  margin-bottom: .5em;
+  transition: color .2s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    color: $darko;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, #ad84b0, 700);
+  }
+  @include responsive(tab-land){
+    margin-bottom: .5em;
+  }
+  @include responsive(tab-port){
+    margin-bottom: 1em;
+  }
+  //responsive:end
+}
+.wcf-txt{
+  @include typo(1em, $txt, 400);
+  margin-bottom: 1em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 400);
+  }
+  @include responsive(tab-land){
+    @include typo(.9em, $txt, 400);
+    margin-bottom: 1em;
+  }
+  @include responsive(tab-port){
+    @include typo(1em, $txt, 400);
+    margin-bottom: 1em;
+  }
+  //responsive:end
+}
+.wcf-event-info{
+  @include typo(.8em, #c49866, 400);
+  margin-bottom: .5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(1.7em, #c49866, 400);
+  }
+  //responsive:end
+}
+//my-videos
+.mv-title{
+  @include typo(3em, $darko, 500);
+  margin-bottom: .5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(4em, $darko, 500);
+  }
+  @include responsive(tab-land){
+    @include typo(2em, $darko, 400);
+  }
+  //responsive:end
+}
+.mv-title::after{
+  content: "Videos";
+  @include typo(2em, $primary-color, null);
+  font-family: $style-font;
+  margin-left: -.1em;
+  position: relative;
+  bottom: -.4em;
+  margin-bottom: .4em;
+}
+
+.mv-txt{
+  @include typo(1em, $txt, 400);
+  margin-bottom: 1em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 400);
+  }
+  @include responsive(tab-land){
+    @include typo(.9em, $txt, 400);
+  }
+  @include responsive(phone){
+    margin-bottom: 2em;
+  }
+  //responsive:end
+}
+//get-in-touch
+.git-title{
+  @include typo(3em, $darko, 500);
+  @include responsive(tab-land){
+    @include typo(2em, $darko, 400);
+  }
+}
+.git-txt{
+  @include typo(1em, $txt, 400);
+  @include center(60%);
+  margin-bottom: .5em;
+  @include responsive(tab-land){
+    @include center(64%);
+    margin-bottom: 2em;
+  }
+  @include responsive(tab-port){
+    @include center(100%);
+    margin-bottom: 2em;
+  }
+}
+//footer
+.ef-b-2-txt{
+  @include typo(2.5em, #c49866, 400);
+  font-family: $style-font;
+  @include responsive(tab-land){
+    @include typo(1.7em, #c49866, 400);
+  }
+  @include responsive(tab-port){
+    margin-right: 2em;
+  }
+  @include responsive(phone){
+    @include typo(2em, #c49866, 400);
+    margin-right: 2em;
+  }
+}
+.right-b-3-txt{
+  @include typo(1em, $txt, 400);
+  @include responsive(tab-port){
+    @include typo(1.2em, $txt, 400);
+    margin-right: 2em;
+  }
+  @include responsive(phone){
+    @include typo(1em, $txt, 400);
+  }
+}
+//more
+.title-color{
+  font-family: $style-font;
+  color: $primary-color;
+  font-size: 2.5em;
+  margin-left: -.5em;
+  margin-bottom: -1em;
+  //responsive:start
+  @include responsive(big-desktop){
+    font-size: 2em;
+  }
+  @include responsive(tab-land){
+    font-size: 1.8em;
+  }
+  //responsive:end
+}
+
+.ta-right{
+  text-align: right;
+  margin-bottom: .5em;
+  //rsponsive:start
+  @include responsive(tab-land){
+    text-align: center;
+  }
+  //rsponsive:end
+}
+.b{
+  font-weight: 600;
+  font-style: italic;
+}
+
+.style-font{
+  @include typo(3em, $primary-color, null);
+  font-family: $style-font;
+}
+.style-text{
+  @include typo(2em, #cba36d, null);
+  font-family: $style-font;
+}
+.page-active{
+  color: $primary-color !important;
+}

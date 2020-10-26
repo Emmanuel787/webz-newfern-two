@@ -1,0 +1,123 @@
+//header
+.mf-dk-header{
+  @include col(4/4);
+  padding: 1.5em 2em;
+  background: $white;
+  text-align: center;
+  position: fixed;
+  top: -10em;
+  opacity: 0;
+  left: 0;
+  z-index: 100;
+  //responsive:start
+  @include responsive(big-desktop){
+    padding: 3em 2em;
+  }
+  //responsive:end
+}
+.mf-mb-header{
+  @include col(4/4);
+  display: none;
+  padding: 1em 2em;
+  background: $white;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  @include responsive(tab-port){
+    display: block;
+  }
+  @include responsive(phone){
+    padding: .8em 1em;
+  }
+}
+//hero-section
+.el-hero-mf{
+  @include col(4/4);
+  height: 100vh;
+  background: url(/resources/img/meet-fern/hero/mf-h-bg.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+  position: relative;
+  z-index: 1;
+  margin-right: 0;
+
+  @include responsive(phone){
+    background: url(/resources/img/meet-fern/hero/mf-h-bg-mb.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.11);
+    background-blend-mode: screen;
+  }
+
+  @include responsive(ipad-pro){
+    background-position: -60em;
+  }
+  @include responsive(ipad-droid){
+    background-position: -50em;
+  }
+}
+//main
+.main-container-mf{
+  @include col(4/4);
+  background: $white;
+  position: relative;
+  z-index: 2;
+}
+//chapter sections
+//2
+.chap-two-sec{
+  @include col(4/4);
+  background: $white;
+  display: none;
+}
+//3
+.chap-three-sec{
+  @include col(4/4);
+  background: $white;
+  display: none;
+}
+//4
+.chap-four-sec{
+  @include col(4/4);
+  height: 100vh;
+  background: #ecccc1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  text-align: center;
+  .just-scroll{
+    p{
+      @include typo(2em, $white, 900);
+    }
+  }
+}
+//5
+.chap-five-sec{
+  @include col(4/4);
+  height: 100vh;
+  background: #8c7891;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  text-align: center;
+  .just-scroll{
+    p{
+      @include typo(2em, $white, 900);
+    }
+  }
+}
+
+.on-tab-contain-mf2{
+  @include responsive(tab-land){
+    @include col(4/4);
+    // padding: 0 13em;
+    margin-top: 8em;
+  }
+  @include responsive(phone){
+    margin-top: 5em;
+  }
+}

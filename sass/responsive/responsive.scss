@@ -1,0 +1,70 @@
+@mixin responsive($breakpoint){
+  @if $breakpoint == contained {
+    @media only screen and (min-width: 2570px){@content};
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 1800px){@content};
+  }
+  @if $breakpoint == tab-land-lg {
+    @media only screen and (max-width: 1300px){@content};
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 1200px){@content};
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 900px){@content};
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 600px){@content};
+  }
+  @if $breakpoint == sm {
+    @media only screen and (max-width: 400px){@content};
+  }
+  @if $breakpoint == xs {
+    @media only screen and (max-width: 350px){@content};
+  }
+  @if $breakpoint == xxs {
+    @media only screen and (max-width: 250px){@content};
+  }
+
+  /////////////////////////////////////////// specifics
+  @if $breakpoint == iphone-6-7-8-plus-port {
+    @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) { @content };
+  }
+  @if $breakpoint == iphone-6-7-8-port {
+    @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) { @content };
+  }
+  @if $breakpoint == iphoneX-port {
+    @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) { @content };
+  }
+  //galaxy
+  @if $breakpoint == galaxys {
+    @media screen
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) { @content };
+  }
+
+  //ipads
+  @if $breakpoint == ipad-pro {
+    @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait){ @content };
+  }
+  @if $breakpoint == ipad-droid {
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){ @content };
+  }
+}
+
+

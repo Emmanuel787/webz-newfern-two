@@ -1,0 +1,81 @@
+@import "config";
+@import "typography/manifest";
+
+.imageswup{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.af-splatter-img-wrapper{
+  @include col(4/4);
+  position: absolute;
+  top: 10em;
+  left: 0;
+  z-index: 0;
+}
+
+.mf-splatter-img-wrapper{
+  width: 30%;
+  position: relative;
+  //responsive:start
+  .mf-splatter-img{
+    @include responsive(phone){
+      display: none;
+    }
+  }
+  //responsive:end
+  .mf-square-img{
+    position: absolute;
+    width: 110%;
+    top: 8em;
+    left: 3em;
+    //responsive:start
+    @include responsive(big-desktop){
+      width: 100%;
+      top: 12em;
+      left: 5em;
+    }
+    @include responsive(tab-land){
+      width: 115%;
+      top: 5.5em;
+      left: 2em;
+    }
+    @include responsive(tab-port){
+      width: 190%;
+      top: 4em;
+      left: 2em;
+    }
+    @include responsive(phone){
+      display: none;
+    }
+    //responsive:end
+  }
+}
+//meetfern
+.p-down{
+  @include col(4/4);
+  margin-top: 4em;
+}
+.p-down-3{
+  margin-top: 2em;
+}
+.p-left{
+  margin-left: 2em !important;
+  @include responsive (tab-land){
+    margin-left: 1em !important;
+  }
+}
+.mar-left-mf{
+  margin-left: 2em !important;
+  @include responsive(tab-port){
+    margin-left: 0;
+  }
+}
+//iframes
+iframe{
+  width: 100%;
+  @include responsive(big-desktop){
+    width: 80%;
+    height: 30em;
+  }
+}

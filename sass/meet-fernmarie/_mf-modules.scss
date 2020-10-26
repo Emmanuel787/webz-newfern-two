@@ -1,0 +1,341 @@
+//mb-header-nav
+.mf-mb-nav-wrapper{
+  @include col(4/4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .mf-mb-main-logo{
+    @include typo(2em, $primary-color, 300);
+    font-family: $style-font;
+  }
+  .mf-mb-burger-btn{
+    @include typo(1.5em, $primary-color, 300);
+  }
+}
+//nav-list
+.mf-main-nav{
+  @include col(4/4);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .mf-main-nav-list{
+    @include typo(.9em, #313035, 400);
+    display: inline-block;
+    &:hover{
+      color: $primary-color;
+      cursor: pointer;
+    }
+    //responsive:start
+    @include responsive(big-desktop){
+      @include typo(1.7em, #615f63, 400);
+    }
+    @include responsive(tab-land){
+      @include typo(.8em, #615f63, 400);
+    }
+    //responsive:end
+  }
+}
+//
+.center-text{
+  text-align: center;
+}
+//my-journey-box
+.my-journey{
+  padding: 3em 1.5em;
+  text-align: center;
+  clear: both;
+}
+  .chapter-one-container-mf,
+  .chapter-one-container-mf2,
+  .chapter-two-container-mf,
+  .chapter-three-container-mf,
+  .chapter-four-container-mf,
+  .chapter-five-container-mf{
+    @include col(4/4);
+    background: $white;
+    position: relative;
+    z-index: 10;
+    padding: 5em 4em 0 4em;
+    margin-right: 0;
+    //rsponsive:start
+    @include responsive(tab-land){
+      padding: 5em 13em;
+    }
+    @include responsive(tab-port){
+      padding: 5em 8em;
+    }
+    @include responsive(phone){
+      padding: 2em;
+    }
+    //rsponsive:end
+
+  .chap-one-wrapper-mf,
+  .chap-two-wrapper-mf,
+  .chap-three-wrapper-mf,
+  .chap-one-wrapper-mf2,
+  .chap-two-wrapper-mf2,
+  .chap-three-wrapper-mf2{
+    @include col(4/4);
+    margin-bottom: 4em;
+    @include responsive(tab-land-lg){
+      margin-bottom: 2em;
+    }
+
+    .b1-left-box-mf,
+    .b2-left-box-mf,
+    .b3-left-box-mf,
+    .b1-left-box-mf2,
+    .b2-left-box-mf2,
+    .b3-left-box-mf2{
+      @include col(1/2, $cycle:2);
+      //rsponsive:start
+      @include responsive(tab-land){
+        @include col(4/4);
+        margin-bottom: 2em;
+      }
+      //rsponsive:end
+    }
+    .b1-right-box-mf,
+    .b2-right-box-mf,
+    .b3-right-box-mf,
+    .b1-right-box-mf2,
+    .b2-right-box-mf2,
+    .b3-right-box-mf2{
+      @include col(1/2, $cycle:2);
+      //rsponsive:start
+      @include responsive(tab-land){
+        @include col(4/4);
+      }
+      //rsponsive:end
+    }
+  }
+}
+
+
+.chapter-one-container-mf2{
+  @include col(4/4);
+  background: $white;
+  position: relative;
+  z-index: 10;
+  padding: 5em 4em 0 4em;
+  //rsponsive:start
+  @include responsive(tab-land){
+    padding: 0 13em 0 13em;
+  }
+  @include responsive(tab-port){
+    padding: 0 8em;
+  }
+  @include responsive(phone){
+    padding: 0 2em;
+  }
+}
+
+.b1-left-box-mf2{
+  @include col(1/2, $cycle:2);
+  // background: #efefef;
+  padding: 1em;
+  @include responsive(tab-land-lg){
+    @include col(4/4);
+    margin-bottom: 5em;
+    background: none;
+    padding: 0;
+    margin-top: -3em;
+  }
+}
+.b2-left-box-mf2{
+  @include col(1/2, $cycle:2);
+  background: #fbfbfb;
+  padding: 1em;
+  @include responsive(tab-land){
+    @include col(4/4);
+    padding: 1em;
+  }
+  @include responsive(tab-port){
+    padding: 0;
+    background: none;
+  }
+  img{
+    margin-bottom: 7em;
+  }
+}
+.b3-left-box-mf2{
+   img{
+    margin-bottom: 1em;
+  }
+}
+
+//hidden
+.mb-hi-box{
+  display: none !important;
+  position: absolute;
+  top: 10em; left: 1em;
+  // background: rgba(193, 159, 153, 0.44);
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  text-align: center;
+  h1{
+    @include typo(2.2em, #ebc2b5 - 10, 700);
+    text-align: left;
+    @include responsive(phone){
+      @include typo(null, $darko, 700);
+      font-size: 1.5em !important;
+    }
+  }
+  @include responsive(tab-port){
+    display: block !important;
+  }
+  @include responsive(phone){
+    padding: 2em 0;
+    display: block !important;
+    top: 15em; left: 2em;
+    h1{
+      @include typo(2em, null, 700);
+    }
+  }
+  @include responsive(ipad-droid){
+    top: 25em; left: 4em;
+  }
+}
+.chapter-1-overlay-switch{
+  @include col(4/4);
+  height: '';
+  background: rgb(248, 248, 248);
+  top: 0; left: 0;
+  position: fixed;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: none;
+  .c1os-loading{
+    width:0;
+    height:0;
+    background: $primary-color;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cl-p-1{
+      @include typo(2em, $white, 900);
+      display: none;
+    }
+  }
+}
+.chapter-2-overlay-switch{
+  @include col(4/4);
+  height: '';
+  background: rgb(248, 248, 248);
+  top: 0; left: 0;
+  position: fixed;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: none;
+  .c2os-loading{
+    width:0;
+    height:0;
+    background: $primary-color;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cl-p-2{
+      @include typo(2em, $white, 900);
+      display: none;
+    }
+  }
+}
+.chapter-3-overlay-switch{
+  @include col(4/4);
+  height: '';
+  background: rgb(248, 248, 248);
+  top: 0; left: 0;
+  position: fixed;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: none;
+  .c3os-loading{
+    width:0;
+    height:0;
+    background: $primary-color;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cl-p-3{
+      @include typo(2em, $white, 900);
+      display: none;
+    }
+  }
+}
+.chapter-4-overlay-switch{
+  @include col(4/4);
+  height: '';
+  background: rgb(248, 248, 248);
+  top: 0; left: 0;
+  position: fixed;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: none;
+  .c4os-loading{
+    width:0;
+    height:0;
+    background: $primary-color;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cl-p-4{
+      @include typo(2em, $white, 900);
+      display: none;
+    }
+  }
+}
+.chapter-5-overlay-switch{
+  @include col(4/4);
+  height: '';
+  background: rgb(248, 248, 248);
+  top: 0; left: 0;
+  position: fixed;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: none;
+  .c5os-loading{
+    width:0;
+    height:0;
+    background: $primary-color;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cl-p-5{
+      @include typo(2em, $white, 900);
+      display: none;
+    }
+  }
+}
+.last-ch-content-box{
+  @include col(4/4); margin-right: 0;
+  background: #fbfbfb;
+  padding: 4em 4em 3em 4em;
+  margin-top: 1em;
+  @include responsive(tab-land){
+    background: none;
+    padding: 0;
+  }
+}

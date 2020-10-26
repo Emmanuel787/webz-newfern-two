@@ -1,0 +1,6 @@
+// only logic code goes in here....
+@mixin typo($size: null, $color: null, $weight: null){
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}

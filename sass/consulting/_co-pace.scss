@@ -1,0 +1,26 @@
+//pace
+#preloader-co{
+  width:100%;
+  height:100vh;
+  background: $white;
+  overflow:hidden;
+  position:fixed;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 2000;
+}
+.loading-item-co {
+  @include typo(3em, $primary-color, 400);
+  font-family: $style-font;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(6em, $primary-color, 400);
+  }
+  //responsive:end
+}

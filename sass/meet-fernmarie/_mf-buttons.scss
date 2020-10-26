@@ -1,0 +1,27 @@
+//meet fern2
+.mf2-btn{
+  @include heroBtn(#cca56d, none, 1em 1.5em);
+  @include typo(1em, $white, 300);
+  transition: all .2s ease-in-out;
+  border: 1px solid #cca56d;
+  &:hover{
+    background: none;
+    border: 1px solid $darko;
+    color: $darko;
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $white, 300);
+  }
+}
+.mb-hi-btn{
+  @include heroBtn($white, none, .5em 1.5em);
+  @include typo(.9em, $darko, 300);
+  transition: all .2s ease-in-out;
+  border: 1px solid $white;
+  margin-top: .5em;
+  &:hover{
+    background: none;
+    border: 1px solid $white;
+    color: $white;
+  }
+}

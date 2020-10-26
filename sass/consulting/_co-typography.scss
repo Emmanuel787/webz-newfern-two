@@ -1,0 +1,170 @@
+//hero-section
+.co-title{
+  @include typo(2em, $white, 700);
+  text-align: left;
+  text-transform: uppercase;
+  @include responsive(phone){
+    @include typo(1.7em, $white, 700);
+    margin-bottom: .5em;
+  }
+}
+.eh-quote-co{
+  @include typo(1em, $white, 400);
+  margin: 1em 0;
+  text-align: left;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $white, 400);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $white, 400);
+  }
+  @include responsive(tab-port){
+    margin-bottom: 2em;
+  }
+  //responsive:end
+}
+//mc-help-wrapper
+.mc-help-title{
+  @include typo(1.7em, $darko, 500);
+  margin-bottom: .5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(4em, $darko, 500);
+  }
+  //responsive:end
+}
+.mc-help-txt{
+  @include typo(1em, $txt, 300);
+  margin-bottom: .5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $txt, 300);
+  }
+  //responsive:end
+}
+//mc-transformation-wrapper
+.mc-transformation-title{
+  @include typo(1.7em, $darko, 500);
+  margin-bottom: .5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(4em, $darko, 500);
+  }
+  //responsive:end
+}
+.mc-transformation-txt{
+  @include typo(1em, $txt, 300);
+  margin-bottom: .5em;
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $txt, 300);
+  }
+  //responsive:end
+}
+.learning-course-txt{
+  @include typo(1.2em, $txt, 700);
+  margin: 1em 0;
+}
+//ncs clients
+.ncs-c-title{
+  @include typo(2em, $darko, 500);
+  @include responsive(big-desktop){
+    display: none;
+  }
+  @include responsive(tab-port){
+    @include center(70%);
+  }
+  @include responsive(phone){
+    @include center(80%);
+    @include typo(1.7em, $darko, 500);
+  }
+}
+//ncs global clients
+.ncs-g-clients-title{
+  @include typo(2em, $darko, 500);
+  @include responsive(big-desktop){
+    @include typo(5em, $darko, 500);
+    margin-bottom: 1em;
+  }
+  @include responsive(tab-land){
+    margin-top: 1em;
+  }
+  @include responsive(phone){
+    @include typo(1.7em, $darko, 500);
+    margin-top: 3em;
+  }
+}
+//instructors
+.inst-main-title{
+  @include typo(2em, $darko, 500);
+  padding: 2em 0;
+  @include responsive(big-desktop){
+    @include typo(5em, $darko, 500);
+  }
+  @include responsive(phone){
+    @include typo(1.7em, $darko, 500);
+    @include center(calc(100% - 2em));
+    padding: 1em 0 2em 0;
+  }
+}
+//fern
+.inst-fern-title{
+  @include typo(2em, $darko, 500);
+  margin-bottom: .5em;
+  @include responsive(big-desktop){
+    @include typo(3.5em, $darko, 500);
+  }
+  @include responsive(phone){
+    @include typo(1.7em, $darko, 500);
+  }
+}
+.inst-fern-txt{
+  @include typo(1em, $txt, 300);
+  margin-bottom: 1em;
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $txt, 300);
+
+  }
+}
+//joe
+.inst-joe-title{
+  @include typo(2em, $darko, 500);
+  margin-bottom: .5em;
+  @include responsive(big-desktop){
+    @include typo(3.5em, $darko, 500);
+  }
+  @include responsive(phone){
+    @include typo(1.7em, $darko, 500);
+  }
+}
+.inst-joe-txt{
+  @include typo(1em, $txt, 300);
+  margin-bottom: 1em;
+  @include responsive(big-desktop){
+    @include typo(2em, $txt, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $txt, 300);
+  }
+}
+//latest-videos
+.lv-title{
+  @include typo(2em, $darko, 500);
+  @include responsive(big-desktop){
+    @include typo(5em, $darko, 500);
+  }
+  @include responsive(phone){
+    @include typo(1.7em, $darko, 500);
+  }
+}
+//more

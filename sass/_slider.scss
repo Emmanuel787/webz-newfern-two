@@ -1,0 +1,369 @@
+
+//slider/top-hero-section:start
+.h-b-slide-ab{
+  width: 50%;
+  position: absolute;
+  z-index: 10;
+  padding: 2em 3em;
+  text-align: center;
+  @include responsive(tab-land){
+    padding: 2em 1em;
+    margin-left: 1em;
+  }
+  img{
+    width: 70%;
+    margin-bottom: .5em;
+  }
+  blockquote{
+    @include typo(1em, $txt, 400);
+    margin-bottom: 1em;
+    @include responsive(big-desktop){
+      @include typo(2em, $darko, 400);
+    }
+  }
+}
+
+.ab-full-slide-container{
+  @include col(4/4);
+  margin-right: 0;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 10;
+  display: flex;
+  background: rgba(255, 255, 255, 0.12);
+  align-items: center;
+}
+
+.slider-hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+.home-hero-content-current{
+  width: 50%;
+}
+.slide-h {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.slide-h.current {
+  opacity: 1;
+}
+
+.slide-h .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+  @include responsive(tab-port){
+    display: none;
+  }
+}
+
+.slide-h .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide-h.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+@media (max-width: 500px) {
+  .slide-h .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide-h.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+/* Backgorund Images */
+
+.slide-h:first-child {
+  background: url('/resources/img/hero-img/s1.jpg') no-repeat
+  center center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.11);
+  background-blend-mode: screen;
+  @include responsive(phone){
+    background: url(/resources/img/hero-img/s1-mb.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.11);
+    background-blend-mode: screen;
+  }
+}
+.slide-h:nth-child(2) {
+  background: url('/resources/img/hero-img/s2.jpg') no-repeat
+  center center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.11);
+  background-blend-mode: screen;
+  @include responsive(phone){
+    background: url(/resources/img/hero-img/s2-mb.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.11);
+    background-blend-mode: screen;
+  }
+}
+.slide-h:nth-child(3) {
+  background: url('/resources/img/hero-img/s3.jpg') no-repeat
+  center center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.11);
+  background-blend-mode: screen;
+  @include responsive(phone){
+    background: url(/resources/img/hero-img/s3-mb.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.11);
+    background-blend-mode: screen;
+  }
+}
+.slide-h:nth-child(4) {
+  background: url('/resources/img/hero-img/s4.jpg') no-repeat
+  center center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.11);
+  background-blend-mode: screen;
+  @include responsive(phone){
+    background: url(/resources/img/hero-img/s4-mb.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.11);
+    background-blend-mode: screen;
+  }
+}
+// .slide-h:nth-child(5) {
+//   background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat
+//     center top/cover;
+// }
+// .slide-h:nth-child(6)  {
+//   background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat
+//     center center/cover;
+// }
+/////////////////////////////////hero:end-->
+//slider/upcoming-events
+.slider,
+.slider > div {
+  /* Images default to Center Center. Maybe try 'center top'? */
+  background-position: center center;
+  display: block;
+  width: 100%;
+  height: 500px;
+  /* height: 100vh; * /* If you want fullscreen */
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  overflow: hidden;
+  -moz-transition: transform .4s;
+  -o-transition: transform .4s;
+  -webkit-transition: transform .4s;
+  transition: transform .4s;
+  //responsive:start
+  @include responsive(big-desktop){
+    height: 700px;
+  }
+  @include responsive(tab-land){
+    height: 400px;
+  }
+  //responsive:end
+}
+
+.slider > div {
+  position: absolute;
+}
+
+#arrow {
+  color: #5bbd72;
+  position: absolute;
+  font-size: 60px;
+  margin: 20px;
+  top: 40%;
+  text-shadow: 0 10px 2px #223422;
+  transition: .3s;
+  width: 30px;
+  padding: 10px 13px;
+  background: rgba(255, 255, 255, .3);
+  cursor: pointer;
+  line-height: 0;
+  box-sizing: content-box;
+  border-radius: 3px;
+  z-index: 4;
+  //responsive:start
+  @include responsive(big-desktop){
+    width: 50px;
+  }
+  //responsive:end
+}
+.arrow-ie{
+  height: 70px;
+}
+
+
+.slider > #arrow svg {
+  margin-top: 3px;
+}
+
+.slider > .left {
+  left: -100px;
+}
+.slider > .right {
+  right: -100px;
+}
+.slider:hover > .left {
+  left: 0;
+}
+.slider:hover > .right {
+  right: 0;
+}
+
+.slider > #arrow:hover {
+  background:#fff;
+  background: rgba(255, 255, 255, .8);
+  transform: translateX(-2px);
+}
+
+.slider > #arrow.right:hover {
+  transform: translateX(2px);
+}
+
+.slider > #arrow.right:active,
+.slider > #arrow.left:active {
+  transform: translateY(1px);
+}
+
+.slider:hover > div {
+  transform: scale(1.01);
+}
+
+.hoverZoomOff:hover > div {
+  transform: scale(1);
+}
+
+.slider > ul {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 4;
+  padding: 0;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+.slider > ul > li {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  list-style: none;
+  float: left;
+  margin: 10px 10px 0;
+  cursor: pointer;
+  border: 1px solid #fff;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slider > ul > .showli {
+  background-color: #7EC03D;
+  -moz-animation: boing .5s forwards;
+  -o-animation: boing .5s forwards;
+  -webkit-animation: boing .5s forwards;
+  animation: boing .5s forwards;
+}
+
+.slider > ul > li:hover {
+  background-color: #7EC03D;
+}
+
+.slider > .show {
+  z-index: 1;
+}
+
+.hideDots > ul {
+  display: none;
+}
+
+.showArrows > .left {
+  left: 0;
+}
+
+.showArrows > .right {
+  right: 0;
+}
+
+.slider > div span {
+  display: block;
+  background: rgba(0,0,0,.5);
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+
+@keyframes boing {
+  0% {
+      transform: scale(1.2);
+  }
+  40% {
+      transform: scale(.6);
+  }
+  60% {
+      transform: scale(1.2);
+  }
+  80% {
+      transform: scale(.8);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+//slider bg-s
+.slider-bg-1{
+  background-image: url(/resources/img/slider/1.jpg);
+}
+.slider-bg-2{
+  background-image: url(/resources/img/slider/2.jpg);
+}
+.slider-bg-3{
+  background-image: url(/resources/img/slider/3.jpg);
+}
+.slider-bg-4{
+  background-image: url(/resources/img/slider/4.jpg);
+}
+.slider-bg-5{
+  background-image: url(/resources/img/slider/4.jpg);
+}
+//arrows

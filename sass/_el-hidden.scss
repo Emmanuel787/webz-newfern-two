@@ -1,0 +1,199 @@
+//responsive
+.hide-mb{
+  display: block;
+  @include responsive(tab-port){
+    display: none;
+  }
+}
+.hide-sm{
+  display: block;
+  @include responsive(phone){
+    display: none;
+  }
+}
+
+.hide-land{
+  display: block;
+  @include responsive(tab-land){
+    display: none;
+  }
+}
+.hide-dk-show-mb{
+  display: none;
+  @include responsive(tab-port){
+    display: block;
+  }
+}
+.hide-dk-show-sm{
+  display: none;
+  @include responsive(phone){
+    display: block;
+  }
+}
+.hide-dk-show-land{
+  display: none;
+  @include responsive(tab-land){
+    display: block;
+  }
+}
+//mobile-menu
+.hid-menu-overlayFx{
+  @include col(4/4);
+  background: rgba(16, 16, 16, 0.83);
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 3001;
+  display: none;
+}
+.hidden-mb-menu{
+  @include col(1/2);
+  text-align: left;
+  padding: 4em 2em 2em 2em;
+  background: $white;
+  position: fixed;
+  height: 100vh;
+  right: -50em;
+  z-index: 5000;
+  margin-right: 0;
+  @include responsive(big-desktop){
+    right: -100em;
+  }
+  @include responsive(phone){
+    width: 80%;
+    margin-right: 0;
+  }
+}
+.hidden-nav{
+  @include responsive(tab-port){
+    margin-top: 2em;
+  }
+   li {
+    @include typo(1.5em, #333, 300);
+    border-bottom: .1em solid #fdeee9;
+    margin-bottom: 1em;
+    margin-bottom: 2em;
+    padding-bottom: .2em;
+    @include responsive(phone){
+      @include typo(1.2em, #333, 300);
+    }
+  }
+}
+.close-menu{
+  @include typo(2.3em, $primary-color, 400);
+  top: -5em;
+  opacity: 0;
+  right:.5em;
+  position: absolute;
+  margin: .8em;
+  &:hover{
+    cursor: pointer;
+  }
+  @include responsive(phone){
+    @include typo(2em, $primary-color, 500);
+    top: -2em;
+    right:.2em;
+  }
+}
+//back-up-btn
+.back-up-wrapper{
+  width: calc(100vh / 15);
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  z-index: 2000;
+  background: rgba(43, 43, 43, 0.72);
+  padding: .2em .4em 0 .4em;
+  display: none;
+  &:hover{
+    background: #2b2b2b;
+  }
+}
+
+.raib{
+  width: 4em;
+  height: 40em;
+  position: absolute;
+  top: 14.5em;
+  right: 1em;
+  z-index: 100;
+  padding: 1em;
+  @include responsive(tab-land){
+    top: 26em;
+  }
+  .raib-icons-wrapper{
+    .raib-icon{
+      margin-top: 1em;
+      border: .1em solid $darko;
+      border-radius: 50%;
+      padding: .3em;
+      transition: all .2s ease-in-out;
+
+      &:hover{
+        border: .1em solid $primary-color;
+        background: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+  .raib-shape-wrapper{
+    .raib-shape{
+      height: 30em;
+    }
+  }
+}
+.ie-hide{
+  display: none;
+}
+//upcoming-events
+.ue-two-container{
+  display: none;
+}
+//ue-trans-effect
+.ue-one-transition-effect-box{
+  @include col(4/4);
+  background: $white;
+  height: "";
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ue-one-p{
+    @include typo(4em, $primary-color, 900);
+    display: none;
+    font-family: $segoe-reg;
+    @include responsive(tab-port){
+      @include typo(2em, $primary-color, 900);
+    }
+    @include responsive(phone){
+      @include typo(1.5em, $primary-color, 900);
+    }
+  }
+}
+.ue-two-transition-effect-box{
+  @include col(4/4);
+  background: $white;
+  // background: url(/resources/img/slider/2.jpg) no-repeat center center;
+  // background-size: cover;
+  height: "";
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ue-two-p{
+    @include typo(4em, $primary-color, 900);
+    display: none;
+    font-family: $segoe-reg;
+    @include responsive(tab-port){
+      @include typo(2em, $primary-color, 900);
+    }
+    @include responsive(phone){
+      @include typo(1.5em, $primary-color, 900);
+    }
+  }
+}

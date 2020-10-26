@@ -1,0 +1,489 @@
+//consulting-mb-header-nav
+.co-mb-nav-wrapper{
+  @include col(4/4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .co-mb-main-logo{
+    @include typo(2em, $primary-color, 300);
+    font-family: $style-font;
+  }
+  .co-mb-burger-btn{
+    @include typo(1.5em, $primary-color, 300);
+  }
+}
+//consulting-nav-list
+.co-main-nav{
+  @include col(4/4);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .co-main-nav-list{
+    @include typo(.9em, #313035, 400);
+    display: inline-block;
+    &:hover{
+      color: $primary-color;
+      cursor: pointer;
+    }
+    //responsive:start
+    @include responsive(big-desktop){
+      @include typo(1.7em, #615f63, 400);
+    }
+    @include responsive(tab-land){
+      @include typo(.8em, #615f63, 400);
+    }
+    //responsive:end
+  }
+}
+//main-container
+.mc-help-wrapper{
+  @include col(4/4);
+  background: $white;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 2em;
+  @include responsive(big-desktop){
+    margin-bottom: 6em;
+  }
+  @include responsive(tab-land){
+    margin-bottom: 1em;
+  }
+  @include responsive(phone){
+    margin-bottom: 1em;
+  }
+}
+.mc-help-box-left{
+  @include col(1/2, $cycle:2);
+  @include responsive(tab-land){
+    @include col(4/4);
+  }
+}
+.mc-help-box-right{
+  @include col(1/2, $cycle:2);
+  background: url(/resources/img/co-vid-bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 2em;
+  @include responsive(tab-land){
+    @include col(4/4);
+    margin-bottom: 2em;
+  }
+}
+
+.mc-transformation-wrapper{
+  @include col(4/4);
+  background: $white;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 3em;
+  @include responsive(tab-land){
+    margin-bottom: 2em;
+  }
+  @include responsive(tab-port){
+    margin-bottom: 1.5em;
+  }
+  @include responsive(phone){
+    margin-bottom: 0;
+  }
+}
+.mc-transformation-box-left{
+  @include col(1/2, $cycle:2);
+  @include responsive(tab-land){
+    @include col(4/4);
+    margin-bottom: 2em;
+  }
+  @include responsive(phone){
+    margin-bottom: 3em;
+  }
+}
+.mc-transformation-box-right{
+  @include col(1/2, $cycle:2);
+  @include responsive(tab-land){
+    @include col(4/4);
+  }
+}
+
+//swiper-ncs testimonials
+.mb-test-img-wrapper-ab{
+  @include col(4/4);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  margin-top: 9.5em;
+  justify-content: center;
+  p{
+    @include typo(1em, $white, 300);
+    @include center(50%);
+    text-align: left;
+    line-height: 1.7;
+  }
+}
+
+.swiper-wrapper{
+  @include col(4/4);
+  // background: $white;
+  padding: 1em 0 0 0;
+  @include responsive(big-desktop){
+    display: none;
+  }
+  @include responsive(phone){
+    margin-bottom: 2em;
+  }
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  @include responsive(tab-port){
+    margin-bottom: 2em;
+  }
+  @include responsive(phone){
+    margin-bottom: 1em;
+  }
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  height: 330px;
+  position: relative;
+  @include responsive(phone){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+}
+//swipe-mobile
+.sl-mb-pic-1{
+  img{
+    @include responsive(phone){
+      width: 60%;
+    }
+    @include responsive(sm){
+      width: 55%;
+    }
+    @include responsive(sm){
+      width: 50%;
+    }
+  }
+}
+.sl-mb-pic-2{
+  img{
+    @include responsive(phone){
+      width: 60%;
+    }
+    @include responsive(sm){
+      width: 55%;
+    }
+    @include responsive(sm){
+      width: 50%;
+    }
+  }
+}
+.sl-mb-pic-3{
+  img{
+    @include responsive(phone){
+      width: 60%;
+    }
+    @include responsive(sm){
+      width: 55%;
+    }
+    @include responsive(sm){
+      width: 50%;
+    }
+  }
+}
+//ncs-g-clients
+.ncs-g-clients-wrapper{
+  @include col(4/4);
+  background: $white;
+  // margin-top: 5em;
+  padding: 0 7em 7em 7em;
+  @include responsive(tab-land){
+    padding: 2em 7em;
+    margin-top: -3em;
+  }
+  @include responsive(tab-port){
+    padding: 0;
+    margin: 2em 0 0 0;
+  }
+  @include responsive(phone){
+    margin-top: 2em;
+    padding: 2em;
+  }
+  .ncs-g-client{
+    @include col(1/5, $cycle:5);
+    margin-bottom: 5em;
+    padding: 1em;
+    @include responsive(tab-port){
+      @include col(1/2, $cycle:2);
+      margin-bottom: 2em;
+      padding: 3em;
+    }
+    @include responsive(phone){
+      padding: 1em;
+    }
+  }
+}
+//instructors
+.inst-main-title-wrapper{
+  @include col(4/4);
+  text-align: center;
+}
+
+.inst-fern-box-wrapper{//Fern
+  @include center(90%);
+  background: #f7f6f6;
+  box-shadow: 0 0 .7em 0 rgba(187, 187, 187, 0.3);
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 5em;
+  @include responsive(tab-land){
+    padding: 2em;
+  }
+  @include responsive(tab-port){
+    padding: 3em;
+  }
+  @include responsive(phone){
+    @include center(100%);
+    padding: 0;
+  }
+  .inst-fern-box-left{
+    @include col(1/2, $cycle:2);
+    display: flex;
+    align-items: center;
+    @include responsive(tab-land){
+      img{
+        width: 130%;
+      }
+    }
+    @include responsive(tab-port){
+      @include col(4/4);
+      img{
+        width: 100%;
+      }
+    }
+    @include responsive(phone){
+      padding: 0;
+    }
+  }
+  .inst-fern-box-right{
+    @include col(1/2, $cycle:2);
+    padding: 2em;
+    @include responsive(tab-land){
+      padding: 0 2em;
+    }
+    @include responsive(tab-port){
+      @include col(4/4);
+      padding: 2em 0 0 0;
+    }
+    @include responsive(phone){
+      padding: 2em;
+    }
+  }
+}
+.inst-joe-box-wrapper{//Joe
+  @include center(90%);
+  clear: both;
+  background: #f7f6f6;
+  box-shadow: 0 0 .7em 0 rgba(187, 187, 187, 0.3);
+  overflow: hidden;
+  @include responsive(tab-land){
+    padding: 2em;
+  }
+  @include responsive(tab-port){
+    padding: 3em;
+  }
+  @include responsive(phone){
+    @include center(100%);
+    padding: 0;
+  }
+  .inst-joe-box-left{
+    @include col(1/2, $cycle:2);
+    padding: 2em;
+    @include responsive(tab-land){
+      @include col(1/2, $cycle: 2);
+      padding: 2em 0;
+    }
+    @include responsive(tab-port){
+      @include col(4/4);
+      padding: 2em 0 0 0;
+    }
+    @include responsive(phone){
+      padding: 2em;
+      margin-right: 0;
+    }
+  }
+  .inst-joe-box-right{
+    @include col(1/2, $cycle:2);
+    display: flex;
+    align-items: center;
+    @include responsive(tab-land){
+      // display: none;
+      img{
+        width: 130%;
+        margin-left: -8em;
+      }
+    }
+    @include responsive(tab-port){
+      @include col(4/4);
+      display: none;
+      img{
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    @include responsive(phone){
+      padding: 0;
+    }
+  }
+}
+//latest-videos
+.video-wrapper-top{
+  @include col(4/4);
+  background: $white;
+  margin: 2em 0;
+  .vwt-left{
+    @include col(1/2,$cycle:2);
+    @include responsive(tab-port){
+      @include col(4/4);
+      margin-bottom: 2em;
+    }
+  }
+  .vwt-right{
+    @include col(1/2,$cycle:2);
+    @include responsive(tab-port){
+      @include col(4/4);
+    }
+  }
+}
+
+.video-wrapper-bottom{
+  @include col(4/4);
+  background: $white;
+  .vwb-left{
+    @include col(1/2,$cycle:2);
+    @include responsive(tab-port){
+      @include col(4/4);
+      margin-bottom: 2em;
+    }
+  }
+  .vwb-right{
+    @include col(1/2,$cycle:2);
+    @include responsive(tab-port){
+      @include col(4/4);
+    }
+  }
+}
+.watch-my-latest-wrapper{
+  @include col(4/4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clear: both;
+  padding: 5em 0;
+  @include responsive(tab-land){
+    padding: 5em 0 1em 0;
+  }
+  @include responsive(phone){
+    padding: 5em 0 0 0;
+  }
+  @include responsive(phone){
+    padding: 5em 0 0 0;
+  }
+  .wmlv-relative-wrapper{
+    @include center(75%);
+    position: relative;
+    @include responsive(tab-port){
+      @include center(90%);
+    }
+    @include responsive(phone){
+      @include center(100%);
+    }
+    .wmlv-ab-wrapper{
+      @include col(4/4);
+      height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .circle-one-co{
+        width: 100px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.38);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all .2s ease-in-out;
+        @include responsive(phone){
+          width: 60px;
+          height: 60px;
+        }
+        &:hover{
+          width: 80px;
+          height: 80px;
+          cursor: pointer;
+        }
+      }
+      .circle-two-co{
+        width: 70px;
+        height: 70px;
+        background: $white;
+        padding: 1em;
+        border-radius: 50%;
+        transition: all .2s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include responsive(phone){
+          width: 50px;
+          height: 50px;
+        }
+        &:hover{
+          width: 60px;
+          height: 60px;
+          cursor: pointer;
+        }
+        img{
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+//more
+.mc-shift-top{
+  display: none;
+  @include responsive(tab-land){
+    display: block;
+    margin-bottom: 2em;
+  }
+}
+
+.mc-shift-top-2{
+  display: none;
+  margin: 0 auto;
+  @include responsive(tab-land){
+    margin-bottom: 2em;
+    width: 100%;
+    display: none;
+  }
+  @include responsive(tab-port){
+    display: block;
+  }
+  // @include responsive(phone){
+  //   display: block;
+  //   margin-bottom: 2em;
+  //   width: 100%;
+  // }
+}
+

@@ -1,0 +1,322 @@
+@import "typography/manifest";
+@import "responsive/manifest";
+
+// @include edit();
+//header
+.hp-dk-main-header{
+  @include col(4/4);
+  padding: 1.5em 2em;
+  background: $white;
+  text-align: center;
+  position: fixed;
+  top: -10em;
+  opacity: 0;
+  left: 0;
+  z-index: 100;
+  transition: box-shadow .2s ease-in-out;
+  //responsive:start
+  @include responsive(big-desktop){
+    padding: 3em 2em;
+  }
+  //responsive:end
+}
+.hp-mb-main-header{
+  @include col(4/4);
+  padding: 1em 2em;
+  background: $white;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  @include responsive(phone){
+    padding: .8em 1em;
+  }
+}
+//hero-section
+.el-hero{
+  @include col(4/4);
+  height: 100vh;
+  background: url(/resources/img/hero-img/home-hero-bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.11);
+  background-blend-mode: screen;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+  position: relative;
+  z-index: 1;
+  margin-right: 0;
+  //responsive:start
+  @include responsive(tab-port){
+    background-position: 4em;
+  }
+  @include responsive(phone){
+    background: url(/resources/img/hero-img/home-hero-bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: 60em;
+  }
+  @include responsive(xs){
+    background-position: -12em;
+  }
+  //correct-order
+  @include responsive(galaxys){
+    background-position: -12em;
+  }
+  @include responsive(iphone-6-7-8-port){
+    background-position: -12em;
+  }
+  @include responsive(iphoneX-port){
+    background-position: -18em;
+  }
+  @include responsive(iphone-6-7-8-plus-port){
+    background-position: -13em;
+  }
+  @include responsive(ipad-pro){
+    background-position: -18em;
+  }
+  @include responsive(ipad-droid){
+    background-position: -15em;
+  }
+  //responsive:end
+}
+//about-Fernamrie
+.about-fernmarie{
+  @include col(4/4);
+  background: $white;
+  position: relative;
+  z-index: 2;
+}
+//meet-Fernmamrie
+.meet-fernmarie{
+  @include col(4/4);
+  padding: 5em 0;
+  background: url(/resources/img/section/meet-fern/meet-fern-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(243, 234, 232, 0.10980392156862745);
+  background-blend-mode: screen;
+  height: 100vh;
+  margin-right: 0;
+  //responsive:start
+
+  @include responsive(tab-port){
+    padding: 0 0 5em 0;
+  }
+  @include responsive(phone){
+    padding: 0;
+    background-position: -32em;
+  }
+  @include responsive(sm){
+    background-position: -35em;
+  }
+  @include responsive(xs){
+    background-position: -37em;
+  }
+  // @include responsive(ipad-pro){
+  //   background-position: -60em;
+  // }
+  // @include responsive(ipad-droid){
+  //   background-position: -20em;
+  // }
+  //responsive:end
+}
+//upcoming events
+.upcoming-events{
+  @include col(4/4);
+  background: $white;
+  padding: 5em 0;
+  margin-right: 0;
+  //responsive:start
+  @include responsive(tab-land){
+    padding: 5em 0;
+  }
+  @include responsive(tab-port){
+    padding: 5em 0 0 0;
+  }
+  @include responsive(phone){
+    padding: 0;
+  }
+  //responsive:end
+}
+//videos-section
+.my-videos{
+  @include col(4/4);
+  padding: 5em 2em;
+  // background: $white;
+  background: url(/resources/img/section/my-video-bg.jpg) no-repeat center center;
+  background-size: cover;
+  //responsive:start
+  @include responsive(tab-land){
+    background: url(/resources/img/section/my-video-bg-tab.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  @include responsive(tab-port){
+    background: url(/resources/img/section/my-video-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  @include responsive(phone){
+    padding: 4em 1em;
+  }
+  //responsive:end
+}
+//get-in-touch
+.get-in-touch-section{
+  @include col(4/4);
+  padding: 2em;
+  text-align: center;
+  background: url(/resources/img/section/git-bg.jpg) no-repeat center center;
+  background-size: cover;
+  @include responsive(tab-land){
+    background-position: -42em;
+  }
+  @include responsive(tab-port){
+    padding: 6em;
+    background-position: -100em;
+    background: #f3f3f3;
+  }
+  @include responsive(phone){
+    padding: 0 2em 4em 2em;
+    background: #f3f3f3;
+  }
+}
+//footer
+.el-footer{
+  @include col(4/4);
+  background: $white;
+  padding: 4em 2em;
+  transition: background .2s ease-in-out;
+  @include responsive(tab-port){
+    text-align: left;
+    background: #e0ccc2;
+  }
+  .ef-boxz{
+    @include span(1/3, $cycle: 3);
+    padding: 2em;
+    @include responsive(tab-port){
+      @include col(4/4);
+    }
+    @include responsive(phone){
+      padding: 2em 0;
+    }
+  }
+  .ef-b-1{
+    width: 60%;
+    @include responsive(tab-port){
+      width: 40%;
+    }
+    @include responsive(phone){
+      width: 70%;
+    }
+  }
+}
+.ef-b-2-icon{
+  width: 8%;
+  @include responsive(tab-port){
+    width: 5%;
+  }
+  @include responsive(phone){
+    width: 7%;
+  }
+  @include responsive(sm){
+    width: 9%;
+  }
+  &:last-child{
+    border-right: 1px solid $txt;
+    width: 12%;
+    padding-right: 1em;
+    @include responsive(tab-land){
+      width: 13.5%;
+    }
+    @include responsive(tab-port){
+      width: 7%;
+      border-right: none;
+    }
+    @include responsive(phone){
+      width: 11%;
+    }
+    @include responsive(sm){
+    width: 13%;
+  }
+  }
+
+}
+.b-3-img{
+  width: 12%;
+  padding: .3em;
+  transition: all .2s ease-in-out;
+  &:hover{
+    background: rgba(196, 152, 102, 0.16);
+    cursor: pointer;
+  }
+  @include responsive(tab-port){
+    width: 7%;
+  }
+  @include responsive(phone){
+    width: 10%;
+  }
+  @include responsive(sm){
+    width: 12%;
+  }
+}
+.md-b2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @include responsive(tab-port){
+   align-items: left;
+   justify-content: left;
+  }
+  img{
+    @include responsive(tab-port){
+      margin-right: 2em;
+    }
+  }
+}
+.right-b3{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @include responsive(tab-port){
+   align-items: left;
+   justify-content: left;
+  }
+}
+//new footer
+.el-foot-social{
+  @include col(4/4);
+  margin-right: 0;
+  padding: 7em;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include responsive(tab-land){
+    padding: 7em 3em;
+  }
+  @include responsive(phone){
+    padding: 5em 3em;
+  }
+  a{
+    display: inline-block;
+    width: 3%;
+    margin-right: 2em;
+    &:last-child{
+      margin-right: 0;
+    }
+    @include responsive(tab-land){
+      width: 4%;
+    }
+    @include responsive(tab-port){
+      width: 5%;
+    }
+    @include responsive(phone){
+      width: 10%;
+    }
+    @include responsive(sm){
+      width: 12%;
+    }
+  }
+}
+//
+// .padding{
+//   padding: 0 4em;
+// }

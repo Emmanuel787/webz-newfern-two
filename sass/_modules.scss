@@ -1,0 +1,489 @@
+@import "typography/manifest";
+@import "cards/manifest";
+//home-page-main-header
+.hp-main-nav{
+  @include col(4/4);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all .2s ease-in-out;
+  .hp-main-nav-list{
+    @include typo(.9em, #615f63, 400);
+    display: inline-block;
+    &:hover{
+      color: $primary-color;
+    }
+    //responsive:start
+    @include responsive(big-desktop){
+      @include typo(1.7em, #615f63, 400);
+    }
+    @include responsive(tab-land){
+      @include typo(.8em, #615f63, 400);
+    }
+    //responsive:end
+  }
+}
+//hero-section
+.el-hero-box-wrapper{
+  width: 45%;
+  padding: 2em;
+  text-align: left;
+  position: relative;
+  bottom: -10em;
+  opacity: 0;
+  //responsive:start
+  @include responsive(tab-port){
+    width: 70%;
+  }
+  @include responsive(phone){
+    width: 95%;
+  }
+  //responsive:end
+  .eh-signature{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+}
+.el-hero-box-wrapper-mb{
+  @include col(4/4);
+  background: $white;
+  padding: 2em;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  .eh-signature{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    @include responsive(phone){
+      width: 70%;
+    }
+  }
+}
+//mb-header-nav
+.hp-mb-nav-wrapper{
+  @include col(4/4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .hp-mb-main-logo{
+    @include typo(2em, $primary-color, 300);
+    font-family: $style-font;
+  }
+  .hp-mb-burger-btn{
+    @include typo(1.5em, $primary-color, 300);
+  }
+}
+//about-Fernmarie
+.job-logo-wrapper{
+  @include col(4/4);
+  background: #f6f6f6;
+  padding: 1.5em;
+  //responsive:start
+  @include responsive(tab-port){
+    padding: 4em;
+  }
+  @include responsive(phone){
+    padding: 4em 1em;
+  }
+  //responsive:end
+  .ijob{
+    @include col(1/6, $cycle:6);
+    display: inline-block;
+    @include responsive(tab-port){
+      @include col(1/3, $cycle:3);
+      margin-bottom: 1em;
+      padding: 1.2em;
+    }
+    @include responsive(phone){
+      padding: 0;
+    }
+  }
+}
+.inner-about-fern-wrapper{
+  @include col(4/4);
+  background: $white;
+  padding: 10em 5em 5em 5em;
+  position: relative;
+  //responsive:start
+  @include responsive(tab-land){
+    padding: 5em 2em 0 2em;
+  }
+  @include responsive(tab-port){
+    padding: 2em;
+  }
+  @include responsive(phone){
+    padding: 4em 1em 1em 1em;
+  }
+  //responsive:end
+  .af-ia-story-wrapper{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.75);//transparent white af-top-right-box
+    position: relative;
+    z-index: 1;
+    //responsive:start
+    @include responsive(tab-port){
+      @include center(90%);
+      background: $white;
+      margin-top: -7em;
+    }
+    @include responsive(phone){
+      @include center(100%);
+      background: $white;
+      margin-top: -1em;
+      padding: 1em 0;
+    }
+    //responsive:end
+  }
+  .af-ia-left-box{
+    @include col(1/2, $cycle:2);
+    position: relative;
+    z-index: 1;
+    //responsive:start
+    @include responsive(tab-land){
+      margin-top: 2em;
+    }
+    @include responsive(tab-port){
+      @include col(4/4);
+      padding: 2em;
+    }
+    @include responsive(phone){
+      padding: 0;
+      margin-top: 0;
+    }
+    //responsive:end
+    .af-ia-lrft-btm-img-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .ia-left-btm-img{
+        width: 85%;
+      }
+    }
+  }
+
+  .af-ia-right-box{
+    @include col(1/2, $cycle:2);
+    //responsive:start
+    @include responsive(tab-port){
+      @include col(4/4);
+      padding: 2em;
+    }
+    @include responsive(phone){
+      padding: 0;
+    }
+    //responsive:end
+    .af-ia-btm-img-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3em;
+      position: relative;
+      z-index: 1;
+      //responsive:start
+      @include responsive(big-desktop){
+        margin-top: 10em;
+      }
+      //responsive:end
+    }
+    .af-ia-btm-img{
+      width: 70%;
+      //responsive:start
+      @include responsive(tab-port){
+        display: none;
+      }
+      //responsive:end
+    }
+  }
+}
+//meet Fermarie
+.mf-ab-left-container{
+  width: 80%;
+  //responsive:start
+  position: relative;
+  @include responsive(phone){
+    @include col(4/4);
+  }
+
+  .cont-box-new{
+    width: 160%;
+    background: #f3eae8;
+    padding: 2em;
+    position: absolute;
+    top: 10em;
+    left: 5em;
+    z-index: 10;
+    text-align: center;
+    //responsive:start
+    @include responsive(big-desktop){
+      padding: 4em;
+      top: 15em;
+      left: 9em;
+    }
+    @include responsive(tab-land-lg){
+      width: 180%;
+      left: 6em;
+    }
+    @include responsive(tab-land){
+      top: 7em;
+      width: 220%;
+      left: 4em;
+    }
+    @include responsive(tab-port){
+      top: 6em;
+      width: 270%;
+    }
+    @include responsive(phone){
+      width: 100vw;
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+    //responsive:end
+    .cbn-box-inner{
+      width: 100%;
+      background: $white;
+      padding: .5em;
+      //responsive:start
+      @include responsive(big-desktop){
+        padding: .7em;
+      }
+      @include responsive(phone){
+        padding: .5em;
+      }
+      //responsive:end
+      .cbn-box-inner-2{
+        width: 100%;
+        background: #f3eae8;
+        padding: 1em;
+      }
+    }
+  }
+}
+
+.ue-title-wrapper{
+  @include col(4/4);
+  padding-bottom: 5em;
+  //responsive:start
+  @include responsive(phone){
+    padding-bottom: 0;
+  }
+  //responsive:end
+}
+.wcf2020-container{
+  @include center(77%);
+  background: #f3eae8;
+  position: relative;
+  margin-top: -3em;
+  text-align: center;
+  padding: 2em;
+  z-index: 10;
+  //responsive:start
+  @include responsive(tab-port){
+    @include center(90%);
+    padding: 2em;
+  }
+  @include responsive(phone){
+    @include center(100%);
+    padding: 5em 1em;
+    margin-top: 0;
+  }
+  //responsive:end
+}
+.speakers-box{
+  @include col(4/4);
+  text-align: left;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+  //responsive:start
+  @include responsive(big-desktop){
+    padding: 3em;
+  }
+  @include responsive(tab-land){
+    padding: 2em;
+  }
+  @include responsive(tab-port){
+    display: block;
+    text-align: center;
+  }
+  @include responsive(phone){
+    padding: 1em;
+  }
+  //responsive:end
+  p{
+    @include typo(1em, $darko, 700);
+    margin-right: .5em;
+    //responsive:start
+    @include responsive(big-desktop){
+      @include typo(1.7em, $darko, 700);
+    }
+    @include responsive(tab-land){
+      @include typo(.9em, $darko, 700);
+    }
+    @include responsive(tab-port){
+      @include typo(2em, $darko, 500);
+      margin-bottom: 1em;
+    }
+    @include responsive(phone){
+      margin: 1em;
+    }
+    //responsive:end
+  }
+
+  .speaker-wrapper{
+    @include span(1/5, $cycle:5);
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    //responsive:start
+    @include responsive(tab-port){
+      @include col(1/2, $cycle:2);
+      background: #f9f9f9;
+      display: block;
+      margin-bottom: 1.5em;
+      padding: 1em;
+      &:last-child{
+        @include center(70%);
+      }
+    }
+    @include responsive(phone){
+      padding: 0;
+    }
+    @include responsive(phone){
+      &:last-child{
+        @include center(90%);
+        padding: 0;
+      }
+    }
+    //responsive:end
+    p{
+      @include typo(.9em, $darko, 500);
+      margin-left: 1em;
+      transition: color .2s ease-in-out;
+      @include responsive (tab-land){
+        @include typo(.7em, $darko, 500);
+      }
+      &:hover{
+        color: $primary-color;
+      }
+      //responsive:start
+      @include responsive(big-desktop){
+        @include typo(1.7em, $darko, 700);
+      }
+      @include responsive (tab-land){
+        margin-left: 1em;
+      }
+      @include responsive(tab-port){
+        @include typo(1em, $darko, 500);
+
+        padding: 1em;
+      }
+      //responsive:end
+    }
+    img{
+      width: 50%;
+      //responsive:start
+      @include responsive(phone){
+        width: 70%;
+      }
+      //responsive:end
+    }
+  }
+}
+
+.ue-btn-wrapper{
+  @include col(4/4);
+  background: url(/resources/img/section/u-events/ue-btn-wrapper-img.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 2em 0 2.5em 0;
+  //responsive:start
+  @include responsive(big-desktop){
+    padding: 4em 0 5em 0;
+  }
+  //responsive:end
+}
+//my-videos-section
+.mv-inner-box-left{
+  @include col(1/2, $cycle:2);
+  padding: 1em;
+  background: $white;
+  text-align: center;
+  //responsive:start
+  @include responsive(tab-port){
+    @include col(4/4);
+    margin-bottom: 1em;
+  }
+  @include responsive(phone){
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  //responsive:end
+}
+.mv-inner-box-right{
+  @include col(1/2, $cycle:2);
+  padding: 1em;
+  //responsive:start
+  @include responsive(tab-port){
+    @include col(4/4);
+  }
+  @include responsive(phone){
+    padding: 0;
+    margin-top: .5em;
+  }
+  //responsive:end
+}
+.play-my-vid-wrapper{
+  @include col(4/4);
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  .pmv-img{
+    z-index: -1;
+  }
+  .pmv-ab-box{
+    @include col(4/4);
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s ease-in-out;
+    .circle-one{
+      width: 70px;
+      height: 70px;
+      background: rgba(255, 255, 255, 0.38);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // padding: 1em;
+      border-radius: 50%;
+      transition: all .2s ease-in-out;
+      &:hover{
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+      }
+    }
+    .circle-two{
+      width: 50px;
+      height: 50px;
+      background: $white;
+      padding: 1em;
+      border-radius: 50%;
+      transition: all .2s ease-in-out;
+      &:hover{
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+      }
+    }
+  }
+}

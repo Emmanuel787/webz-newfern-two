@@ -1,0 +1,58 @@
+@import "config";
+@import "typography/manifest";
+
+#mc_embed_signup {
+  clear: left;
+  font-family: $font-primary;
+  width: 100%;
+  margin-bottom: 1em !important;
+  .button {
+    background-color: #cca36d !important;
+    border-radius: 0 !important;
+    &:hover{
+      background: $txt !important;
+    }
+  }
+  label{
+    color: $txt !important;
+    margin-bottom: 2em !important;
+  }
+}
+
+#mc_embed_signup input.email {
+  font-family: $font-primary !important;
+  font-size: 1em !important;
+  border: none !important;
+  border-left: 2px solid $primary-color !important;
+  border-bottom: 2px solid $primary-color !important;
+  color: #cca36d !important;
+  background-color: none !important;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 0px 0.4em;
+  display: inline-block;
+  margin: 0;
+  width: 350px;
+  vertical-align: top;
+  border-radius: 0 !important;
+}
+
+#mc_embed_signup .button {
+  @include responsive(tab-port){
+    margin-top: 1em !important;
+    width: 30% !important;
+  }
+  @include responsive(phone){
+    margin-top: 1em !important;
+    width: 100% !important;
+  }
+}
+.clear{
+  @media only screen and (max-width: 960px){
+    width: 100%;
+    margin-top: 1em;
+  }
+  @include responsive(tab-port){
+    margin-top: 0;
+  }
+}

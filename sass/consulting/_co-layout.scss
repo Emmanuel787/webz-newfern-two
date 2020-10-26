@@ -1,0 +1,118 @@
+//header
+.co-dk-header{
+  @include col(4/4);
+  padding: 1.5em 2em;
+  background: $white;
+  text-align: center;
+  position: fixed;
+  top: -10em;
+  opacity: 0;
+  left: 0;
+  z-index: 100;
+  //responsive:start
+  @include responsive(big-desktop){
+    padding: 3em 2em;
+  }
+  //responsive:end
+}
+.co-mb-header{
+  @include col(4/4);
+  display: none;
+  padding: 1em 2em;
+  background: $white;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  @include responsive(tab-port){
+    display: block;
+  }
+  @include responsive(phone){
+    padding: .8em 1em;
+  }
+}
+//hero-section
+.el-hero-co{
+  @include col(4/4);
+  height: 100vh;
+  background: url(/resources/img/consulting/hero/consulting-hero-bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-color: rgba(39, 38, 38, 0.068);
+  background-blend-mode: screen;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+  position: relative;
+  z-index: 1;
+  margin-right: 0;
+  @include responsive(tab-port){
+    justify-content: center;
+    background-color: rgba(64, 68, 72, 0.904);
+    background-blend-mode: overlay;
+  }
+}
+//main container
+.main-container-co{
+  @include col(4/4);
+  background: $white;
+  z-index: 20;
+  padding: 5em 4em 0 4em;
+  position: relative;
+  @include responsive(tab-land){
+    padding: 5em 13em;
+  }
+  @include responsive(tab-port){
+    padding: 5em 8em 0 8em;
+  }
+  @include responsive(phone){
+    padding: 5em 2em 0 2em;
+  }
+}
+//ncs-testimonials
+.ncs-client-testimonial-container{
+  @include col(4/4);
+  background: $white;
+  text-align: center;
+  @include responsive(tab-port){
+    padding: 0 0 2em 0;
+  }
+  @include responsive(phone){
+    padding: 0;
+  }
+}
+//ncs global clients
+.ncs-global-clients{
+  @include col(4/4);
+  background: $white;
+  text-align: center;
+  padding: 4em 0;
+  @include responsive(tab-land){
+    padding: 5em 0 0  0;
+  }
+  @include responsive(tab-land){
+    padding: 0;
+  }
+}
+//instructors
+.instructors{
+  @include col(4/4);
+  background: #f3f3f3;
+  margin-top: -3em;
+  padding-bottom: 7em;
+  position: relative;
+  z-index: 20;
+  @include responsive(phone){
+    background: #ffffff;
+    padding-bottom: 1em;
+  }
+}
+//latest-video
+.latest-video{
+  @include col(4/4);
+  padding: 5em 4em;
+  background: $white;
+  text-align: center;
+  @include responsive(phone){
+    padding: 5em 2em;
+  }
+}

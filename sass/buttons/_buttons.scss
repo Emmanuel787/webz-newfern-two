@@ -1,0 +1,15 @@
+// only logic code goes in here...
+//404.html button
+@mixin heroBtn($bg: null, $border: null, $padd: null){
+  background: $bg;
+  border: $border;
+  padding: $padd;
+  &:focus,
+  &:active{
+    text-decoration: none;
+    outline: none;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}

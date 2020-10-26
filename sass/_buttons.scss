@@ -1,0 +1,156 @@
+@import "buttons/manifest";
+@import "typography/manifest";
+//hero-section
+.hs-btn{
+  @include heroBtn($primary-color, none, 1em 1.5em);
+  @include typo(1em, $white, 300);
+  transition: all .2s ease-in-out;
+  border: 1px solid $primary-color;
+  &:hover{
+    background: none;
+    border: 1px solid $darko;
+    color: $darko;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include heroBtn($primary-color, none, 1em 1.5em);
+    @include typo(2em, $white, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $white, 300);
+  }
+  //responsive:end
+}
+//about-Fernmarie
+.af-ia-right-btn{
+  @include heroBtn($primary-color, none, 1em 1.5em);
+  @include typo(1em, $white, 300);
+  margin-top: .5em;
+  border: 1px solid $primary-color;
+  transition: all .2s ease-in-out;
+  &:hover{
+    background: none;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include heroBtn($primary-color, none, 1em 1.5em);
+    @include typo(2em, $white, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $white, 300);
+  }
+  //responsive:end
+}
+//meet Fernmarie
+.mf-btn{
+  @include heroBtn($primary-color, none, 1em 1.5em);
+  @include typo(1em, $white, 300);
+  margin-top: .5em;
+  transition: all .2s ease-in-out;
+  border: 1px solid $primary-color;
+  &:hover{
+    background: none;
+    border: 1px solid $darko;
+    color: $darko;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include heroBtn($primary-color, none, 1em 1.5em);
+    @include typo(2em, $white, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $white, 300);
+  }
+  //responsive:end
+}
+//upcoming-events
+.ue-btn{
+  @include heroBtn($white, none, 1em 1.5em);
+  @include typo(1em, #313131, 300);
+  margin-top: .5em;
+  border: 1px solid $white;
+  transition: all .2s ease-in-out;
+  &:hover{
+    background: none;
+    border: 1px solid $white;
+    color: $white;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, null, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, null, 300);
+  }
+  //responsive:end
+}
+.ue2-btn{
+  @include heroBtn(none, none, 1em 1.5em);
+  @include typo(1em, #313131, 300);
+  margin-top: .5em;
+  border: 1px solid $white;
+  transition: all .2s ease-in-out;
+  margin-left: 1em;
+  &:hover{
+    background: $white;
+    border: 1px solid $white;
+    color: #313131;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, null, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, null, 300);
+  }
+  //responsive:end
+}
+.ue2-btn-prev{
+  @include heroBtn(none, none, 1em 1.5em);
+  @include typo(1em, #313131, 300);
+  margin-top: .5em;
+  border: 1px solid $white;
+  transition: all .2s ease-in-out;
+  margin-right: 1em;
+  &:hover{
+    background: $white;
+    border: 1px solid $white;
+    color: #313131;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, null, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, null, 300);
+  }
+  //responsive:end
+}
+//my-videos
+.mv-btn{
+  @include heroBtn($primary-color, none, 1em 1.5em);
+  @include typo(1em, $white, 300);
+  margin-top: .5em;
+  border: 1px solid $primary-color;
+  transition: all .2s ease-in-out;
+  &:hover{
+    background: none;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+  //responsive:start
+  @include responsive(big-desktop){
+    @include typo(2em, $white, 300);
+  }
+  @include responsive(tab-land-lg){
+    @include typo(.9em, $white, 300);
+    margin-top: 1em;
+  }
+  @include responsive(phone){
+
+    margin-bottom: 3em;
+  }
+  //responsive:end
+}

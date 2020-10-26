@@ -1,0 +1,59 @@
+@import url("https://use.typekit.net/cnm4khd.css");
+@import url('https://fonts.googleapis.com/css?family=Rouge+Script&display=swap');
+@font-face {
+  font-family: 'madameregular';
+  src: url('/dist/css/types/madame-webfont.woff2') format('woff2'),
+          url('/dist/css/types/madame-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+//Segoe
+@font-face {
+  font-family: 'Segoe UI Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI Regular'), url('/dist/css/types/Segoe\ UI.woff') format('woff');
+}
+@font-face {
+  font-family: 'Segoe UI Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI Italic'), url('/dist/css/types/Segoe\ UI\ Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Segoe UI Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI Bold'), url('/dist/css/types/Segoe\ UI\ Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Segoe UI Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI Bold Italic'), url('/dist/css/types/Segoe\ UI\ Bold\ Italic.woff') format('woff');
+}
+//primary font family
+// $font-primary: brandon-grotesque, sans-serif;
+// $font-primary: montserrat, sans-serif;
+$font-primary: century-gothic, sans-serif;
+$segoe-reg: 'Segoe UI Regular';
+$style-font: 'madameregular', Arial, sans-serif;
+//font-base
+$em-base: 62.5%;
+//font-base responsive
+$em-base-tab-land: 56.25%;
+$em-base-tab-port: 50%;
+$em-base-phone: 43.75%;
+$em-base-big-desktop: 75%;
+
+//////color palette set
+//
+$primary-color: #ebc2b5;
+// $secondary-color: ;
+// $tertiary-color: ;
+// $quatenary-color: ;
+// $quinary-color: ;
+// $sixnary-color: ;
+$white: #fff;
+$darko: #3b3b3b;
+$txt: #615f63;
