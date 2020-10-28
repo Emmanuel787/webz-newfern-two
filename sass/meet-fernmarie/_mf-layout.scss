@@ -70,10 +70,11 @@
   margin-right: 0;
 
   @include responsive(phone){
-    background: url(/resources/img/meet-fern/hero/mf-h-bg-mb.jpg) no-repeat center center;
+    background: url(/resources/img/meet-fern/ch-2/ch-2-bg-tab.jpg) no-repeat center center;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.11);
     background-blend-mode: screen;
+    background-position-x: 0;
   }
 
   @include responsive(ipad-pro){
@@ -97,7 +98,7 @@
   margin-right: 0;
 
   @include responsive(phone){
-    background: url(/resources/img/meet-fern/hero/mf-h-bg-mb.jpg) no-repeat center center;
+    background: url(/resources/img/meet-fern/ch-3/ch-3-bg-phone.jpg) no-repeat center center;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.11);
     background-blend-mode: screen;
