@@ -29,8 +29,7 @@
   padding: 2em;
   text-align: left;
   position: relative;
-  bottom: -10em;
-  opacity: 0;
+  display: none !important;
   //responsive:start
   @include responsive(tab-port){
     width: 70%;

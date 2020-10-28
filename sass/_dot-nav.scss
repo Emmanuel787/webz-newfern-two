@@ -19,8 +19,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-left: -6em;
+  @include responsive(phone){
+    margin-left: -3em;
+  }
 }
+
 #dot-nav li {
 	position: relative;
 	background-color: $white;
@@ -34,6 +38,7 @@
   vertical-align:bottom;
   margin-right: 7em;
   transition: all .2s ease-in-out;
+
   &:last-child{
     margin-right: 0;
   }
@@ -60,9 +65,12 @@
 #dot-nav a {
 	outline: 0;
 	vertical-align:top;
-	margin: 0px 0px 0px 25px;
+	margin: 0 0 0 6em;
 	position: relative;
-	top:-5px;
+  top:-5px;
+  @include responsive(phone){
+    margin: 0 0 0 3em;
+  }
 }
 
 .at1::before{
@@ -75,7 +83,7 @@
 .at2::after{
   content: 'Chapter 2';
   display: block;
-  margin: .3em 0 0 -2.2em;
+  margin: 2em 0 0 -1.8em;
   white-space: nowrap;
   @include typo(.8em, $txt, 400);
 }
@@ -89,7 +97,7 @@
 .at4::after{
   content: 'Chapter 4';
   display: block;
-  margin: .3em 0 0 -2.2em;
+  margin: 2em 0 0 -1.8em;
   white-space: nowrap;
   @include typo(.8em, $txt, 400);
 }
@@ -125,6 +133,7 @@
     margin: 0 auto;
     height: .3em;
     background: #f6f6f6;
+    margin-top: -.5em;
     @include responsive(tab-land){
       width: calc(100% - 40%);
     }
