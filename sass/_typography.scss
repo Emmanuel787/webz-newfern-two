@@ -19,21 +19,6 @@
   }
   //responsive:end
 }
-// .eh-quote::before{
-//   content: '"';
-//   position: absolute;
-//   @include typo(4em, $txt, 400);
-//   top: 0; left: 0;
-//   margin-top: -.6em;
-//   margin-left: -.2em;
-// }
-// .eh-quote::after{
-//   content: '"';
-//   position: absolute;
-//   @include typo(4em, $txt, 400);
-//   bottom: -.8em; right: 0;
-//   margin-left: -1em !important;
-// }
 
 //about-Fernmarie
 .af-ia-right-title{
@@ -324,4 +309,12 @@
 }
 .page-active{
   color: $primary-color !important;
+}
+
+//back-up-arrow
+.back-up-arrow{
+  @include typo(2.5em, $primary-color, null);
+  &:hover{
+    @include typo(2.5em, $primary-color - 10, null);
+  }
 }
