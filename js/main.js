@@ -293,6 +293,10 @@ $('.ue2-btn-prev').on('click', function () {
   $('.ue-two-p').delay(500).fadeIn().delay(200).fadeOut();
 });
 
+$('.go-meet').on('click', function () {
+  $('.transition-fx').fadeIn(500);
+});
+
 /*
 if !E=doThisHere();start
 */
