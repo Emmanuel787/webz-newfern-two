@@ -348,6 +348,9 @@ $(document).ready(function () {
                 "margin-left":"-9em"
               });
             }
+            $('.go-meet, .go-consulting, .go-contact, .go-home, .go-chap').on('click', function () {
+              $('.transition-fx').fadeIn(500);
+            });
             /*
             if !E=doThisHere();end
             */
