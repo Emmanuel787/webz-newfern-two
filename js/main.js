@@ -1,4 +1,3 @@
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 // reveal on scroll:start
 new WOW().init();
 // reveal on scroll:end

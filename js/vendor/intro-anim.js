@@ -6,7 +6,7 @@ $(window).on('load', function () {
   //hero-center-text:start
   tl.to('.intro-two-title', { y: '0%', duration: 0.7, delay: 1, opacity: 1, stagger: 0.05 });
 
-  tl.to('.intro-two-title', { y: '100%', duration: 1, delay: 0.2, opacity: 1, stagger: 0.05 });
+  tl.to('.intro-two-title', { y: '100%', duration: 1, delay: 1.3, opacity: 1, stagger: 0.05 });
   //hero-center-text:end
 
   //intro-one:start

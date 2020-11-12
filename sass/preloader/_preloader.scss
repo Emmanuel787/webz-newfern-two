@@ -1,9 +1,8 @@
 .intro-one{
   @include col(4/4); margin-right: 0;
-  // height: 100vh;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: $white - 10;
+  background-color: $white - 12;
   z-index: 100;
   transform: translateY(100%);
   display: flex;
@@ -14,7 +13,6 @@
 
 .intro-two{
   @include col(4/4); margin-right: 0;
-  // height: 100vh;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background-color: $primary-color;
@@ -27,19 +25,19 @@
 
 .intro-three{
   @include col(4/4); margin-right: 0;
-  // height: 100vh;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 101;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3000;
+  z-index: 999;
+  background: $white - 10;
 }
 
 .intro-two-title{
   @include typo(4em, $white, 100);
-  // font-family: $neuro;
+  font-family: $style-font;
   font-weight: 400;
   font-style: normal;
   overflow: hidden;
@@ -74,3 +72,4 @@ svg{
     display: inline-block;
   }
 }
+
