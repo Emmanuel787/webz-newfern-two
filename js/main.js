@@ -1,7 +1,9 @@
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 // reveal on scroll:start
 new WOW().init();
 // reveal on scroll:end
 
+$(window).scrollTop(0);
 //rellax #2:start
 var rellax = new Rellax(".rellax", {
   center: true,
